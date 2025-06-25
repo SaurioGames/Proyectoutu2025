@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Mitr:wght@200;300&display=swap");
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #f8f8f8;;
+  padding-top: 32px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+
+  margin-left: 24px;
+  margin-right: 24px;
+  border-top: 1px solid #bebebe;
+}
+
+h6 {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  z-index: 50;
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+
+  align-items: center;
+  padding: 18px 64px;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav > div > ul {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+
+.container {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-md {
+  font-size: 1.10rem;
+  font-weight: 500;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.font-irish {
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
