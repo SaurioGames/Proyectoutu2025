@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas - DRAFTOSAURUS</title>
+
+    <link rel="stylesheet" href="styles/global.css?v=0.1">
+    <link rel="stylesheet" href="styles/rules.css?v=0.1">
+    <style>main {
+    position: relative;
+    z-index: 1;
+    background-image: url("../assets/rules_background.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+  }
+  
+
+.rules__container {
+    position: relative;
+    z-index: 2;
+    min-height: 100dvh;
+    height: 250dvh;
+    max-width: 800px;
+
+    text-wrap: balance;
+    margin-top: 100px;
+    margin-left: 64px;
+
+    color: #ffffff;
+}
+
+span {
+    font-weight: 600;
+}
+
+ol {
+    padding-left: 24px;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+p {
+    line-height: 1.2lh;
+}</style>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <nav>
+             <div>
+                <a href="./index.html" class="text-xl font-irish text-white">SaurioGames</a>
+             </div>
+    
+             <div>
+              <ul>
+                <li><a href="./index.html" class="text-md text-white">Inicio</a></li>
+                <li><a href="./rules.html" class="text-md text-white underline">Reglas</a></li>
+                 <li><a href="#" class="text-md text-white">Sobre nosotros</a></li>
+              </ul>
+             </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="overlay"></div>
+            <section class="rules__container">
+                <p><span class="underline">Draftosaurus</span> es un juego de mesa familiar y estratégico diseñado por <strong>Antoine Bauza, Corentin Lebrat, Ludovic Maublanc</strong> y <strong>Théo Rivière</strong>. Fue <strong>publicado</strong> en <strong>2019</strong> por <strong>Ankama</strong> y <strong>Board Game Box</strong>.<br /> Es un juego rápido (10-15 minutos por partida) con mecánicas de draft y colocación de trabajadores, en el que los jugadores construyen su propio parque de dinosaurios con el objetivo de obtener la mayor cantidad de puntos.
+                    <br />Instrumentos que vienen en el juego base:
+                    <ul>
+                        <li>5 Tableros de parque (Uno por cada jugador)</li>
+                        <li>60 Dinosaurios de madera (en 6 colores diferentes, representando diferentes especies)</li>
+                        <li>Dado de colocación</li>
+                        <li>Reglamento</li>
+                    </ul>
+                </p>
+                <br />
+
+                <h1>Reglas</h1>
+                <br />
+                <p>Se juega de <strong>2 a 5 jugadores</strong></p>
+                <p>Aproximadamento dura <strong>15 minutos</strong> cada partida</p>
+                <p>El objetivo se trata de colocar estrategicamente tus dinosaurios en tu zoológico para ganar la mayor cantidad de puntos al final de la partida.</p>
+                <br />
+                <b>Preparación:</b>
+                <p>Cada jugador toma un tablero de zoológico.</p>
+                <p>Cada jugador recibe 6 dinosaurios al azar de la bolsa (mantenerlos ocultos).</p>
+                <p>El jugador inicial recibe el dado.</p>
+                <br />
+                <b>Jugar:</b>
+                <p>El juego se desarrolla en 2 rondas de 6 turnos cada una (12 turnos en total).</p>
+                <p>
+                    <strong>Cada turno consta de 3 fases:</strong>
+                    <br />
+                    <p>
+                        <ol>
+                            <li><b>Tirar el dado</b>
+                                <ul>
+                                    <li>El jugador con el dado (el "tirador") lo lanza.</li>
+                                    <li>El dado determina una restricción que afecta a todos excepto al tirador (ver restricciones más abajo).</li>
+                                </ul>
+                            </li>
+                            <li><b>Colocar un dinosaurio</b>
+                                <ul>
+                                    <li>Cada jugador elige 1 dinosaurio de su mano y lo coloca en una zona válida de su zoológico, respetando: Las reglas de esa zona y la restriccion del dado</li>
+                                </ul>
+                            </li>
+                            <li><b>Pasar los dinosaurios</b>
+                                <ul><li>Cada jugador pasa sus dinosaurios restantes al jugador de la izquierda (en la segunda ronda, se pasa a la derecha).</li>
+                                <li>
+                                    El dado pasa al siguiente jugador en sentido horario.
+                                </li></ul>
+                            </li>
+                        </ol>
+                    </p>
+                </p>
+                <br />
+                <b>Restricciones del dado:</b>
+                <p>El dado determina en qué zona del parque se debe colocar un dinosaurio en ese turno (no aplica para el jugador que lo lanza).</p>
+                <ul>
+                    <li>Zona izquierda o derecha del parque.</li>
+                    <li>Zona boscosa o de rocas.</li>
+                    <li>Recinto vacio.</li>
+                    <li>Recinto que no contenga un T-Rex</li>
+                </ul>
+                <p>Si un jugador no puede colocar un dinosaurio en un recinto válido, debe colocarlo en el río.
+                    Reglas de los Recintos y Puntuación
+                    Cada recinto tiene sus propias reglas de colocación y puntúa de forma diferente al final del juego:
+                </p>
+                <ol>
+                    <li>
+                        <b>El bosque de la Semejanza:</b>
+                        <ul>
+                            <li>Este recinto sólo puede albergar dinosaurios de la misma especie.</li>
+                            <li>Debe ocuparse siempre de izquierda a derecha sin dejar espacios intermedios.</li>
+                            <li>Al final de la partida, ganarás los puntos de victoria indicados según el número total de dinosaurios colocados en el recinto.</li>
+                        </ul>
+                    </li>
+                    <li><b>El Prado de la Diferencia:</b>
+                        <ul>
+                            <li>Este recinto sólo puede albergar dinosaurios de especies distintas.</li>
+                            <li>Debe ocuparse siempre de izquierda a derecha sin dejar espacio intermedios.</li>
+                            <li>Al final de la partida, ganarás los puntos de victoria indicados según el número de dinosaurios colocados en el recinto.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>La Pradera del Amor:</b>
+                        <ul>
+                            <li>Este recinto puede albergar dinosaurios de todas las especies.</li>
+                            <li>Al final de la partida, conseguirás 5 puntos de victoria por cada pareja de dinosaurios de la misma especie que se encuentre en el recinto.</li>
+                            <li>Está permitido tener más de una pareja de la misma especie.</li>
+                            <li>Los dinosaurios que no formen pareja no suman puntos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>El Trío Frondoso:</b>
+                        <ul>
+                            <li>Este recinto puede albergar hasta 3 dinosaurios sin importar su especie.</li>
+                            <li>Al final de la partida, ganarás 7 puntos de victoria si hay exactamente 3 dinosaurios dentro del recinto.</li>
+                            <li>Si al final de la partida el recinto no alberga exactamente 3 dinosaurios, no te llevas ningún punto.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>El Rey de la Selva:</b>
+                        <ul>
+                            <li>El recinto puede albergar solo 1 dinosaurio.</li>
+                            <li>Al final de la partida ganarás 7 puntos de victoria si ningún jugador o jugadora tiene en su parque más dinosaurios que tú de esta especie.</li>
+                            <li>En caso de empate recibes igualmente los 7 puntos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>La Isla Solitaria:</b>
+                        <ul>
+                            <li>Este recinto puede albergar solo 1 dinosaurio.</li>
+                            <li>Al final de la partida otorga 7 puntos de victoria si es el único de su especie en tu parque.</li>
+                            <li>En caso contrario otorga 0 puntos.</li>
+                        </ul>
+                    </li>
+                </ol>
+             </section>
+        </main>
+
+        <footer>
+            <h6>SaurioGames | <span> Todos los derechos reservados &copy; 2025</span></h6>
+          </footer>
+    </div>
+</body>
+</html>
