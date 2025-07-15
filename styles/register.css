@@ -1,55 +1,68 @@
 main {
-    background-color: rgb(232, 232, 232);
+  background-color: rgb(232, 232, 232);
 }
 
 .signup__container {
-    display: grid;
-    place-content: center;
+  display: grid;
+  place-content: center;
 
-    height: 100vh;
+  height: 100vh;
 }
 
 .signup__header {
-    text-align: center;
+  text-align: center;
 
-    margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .signup__header h1 {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .signup__header > p {
-    font-size: 14px;
-    color: #121212;
+  font-size: 14px;
+  color: #121212;
 }
 
 .signup__form {
-    display: grid;
+  display: grid;
 
-    padding: 150px 90px;
-    border-radius: 25px;
-    gap: 12px;
-    background-color: rgb(255, 255, 255);
+  padding: 24px 32px;
+
+  border-radius: 12px;
+  gap: 12px;
+  
+  border: 1px solid #b3aeae;
 }
 
-.boton_registro{
-    width: 100px;
-    display: grid; 
-    margin-left: 100px;
-    padding: 10px;
-    border-radius: 5px;
-border: 1px ;
-background-color: #c6c9c6;
+.signup__button {
+  display: grid;
+  place-self: center;
+  margin-top: 16px;
+  padding: 12px 24px;
+  
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+  background-color: #212121;
 }
 
+input {
+  width: 300px;
 
-input{
-    width: 300px;
-    background-color: #b3aeae;
-    border: 1px;    
-    padding: 20px;
-    border-radius: 5px;
+  padding: 18px 12px;
+
+  background-color: transparent;
+  border: 1px solid #00000025;
+
+  border-radius: 5px;
 }
 
+a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+  font-size: 13px;
+}
