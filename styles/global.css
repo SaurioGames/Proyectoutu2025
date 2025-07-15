@@ -93,6 +93,10 @@ ul {
   color: #ffffff;
 }
 
+.text-black {
+  color: #000000;
+}
+
 .text-md {
   font-size: 0.875rem;
   font-weight: 500;
