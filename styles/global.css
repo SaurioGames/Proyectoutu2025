@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Mitr:wght@200;300&display=swap");
 
-*, html, body {
+*,
+html,
+body {
   margin: 0;
   padding: 0;
 
@@ -13,15 +15,10 @@ span {
 }
 
 footer {
-  background-color: #f8f8f8;;
   padding-top: 32px;
-
-  padding-left: 24px;
-  padding-right: 24px;
   padding-bottom: 24px;
-
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 8px;
+  padding-right: 8px;
   border-top: 1px solid #bebebe;
 }
 
@@ -29,7 +26,7 @@ h6 {
   font-family: "Irish Grover", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.7rem;
 
   margin: 0;
   padding: 0;
@@ -45,14 +42,28 @@ ul {
   margin: 0;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
 .navbar {
   z-index: 50;
   position: fixed;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+
   align-items: center;
-  padding: 18px 64px;
 }
 
 .navbar nav {
@@ -62,11 +73,10 @@ ul {
 }
 
 .navbar nav > div > ul {
-  display: flex;
+  display: none;
   gap: 32px;
   align-items: center;
 }
-
 
 .container {
   display: grid;
@@ -84,12 +94,12 @@ ul {
 }
 
 .text-md {
-  font-size: 1.10rem;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
-.text-xl {
-  font-size: 1.5rem;
+.text-lg {
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -97,4 +107,42 @@ ul {
   font-family: "Irish Grover", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+/* DESKTOP DESIGN */
+@media (width >= 640px) {
+  footer {
+    padding-top: 32px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+  }
+
+  .navbar {
+    padding: 18px 64px;
+  }
+
+  .navbar nav > div > ul {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }

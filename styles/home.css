@@ -1,13 +1,15 @@
 main {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .hero__container {
   position: relative;
   z-index: 1;
-  background-image: url('/assets/banner.webp');
+
+  background-image: url("../assets/banner_mobile.webp");
   background-size: cover;
   background-position: center;
+  max-width: 100vw;
   height: 130dvh;
 
   display: flex;
@@ -16,30 +18,28 @@ main {
   text-align: start;
   padding: 0 20px;
 
-  webkit-mask-image: linear-gradient(to bottom, black 70%, rgba(0,0,0,0.5) 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 70%, rgba(0,0,0,0.5) 85%, transparent 100%);
+  webkit-mask-image: linear-gradient(
+    to bottom,
+    black 70%,
+    rgba(0, 0, 0, 0.5) 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 70%,
+    rgba(0, 0, 0, 0.5) 85%,
+    transparent 100%
+  );
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
-  z-index: 1;
 }
 
 .hero__container h2 {
   position: relative;
   z-index: 2;
   color: #fff;
-  font-size: 4rem;
-  max-width: 1100px;
-  padding-left: 24px;
-  padding-top: 180px;
+  font-size: 1.5rem;
+  max-width: 100vw;
 }
 
 .aboutgame__container > .logo__container {
@@ -60,6 +60,49 @@ main {
 }
 
 .game__spoiler > img {
-   box-shadow: 0 0 24px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
 }
 
+.logo {
+  width: auto;
+  height: 100px;
+}
+
+.map {
+  width: 200px;
+  height: 200px;
+}
+
+/* DESKTOP DESIGN */
+@media (width >= 640px) {
+  .hero__container {
+    background-image: url("../assets/banner.webp");
+    background-size: cover;
+    background-position: center;
+
+    max-width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  .hero__container h2 {
+    font-size: 4rem;
+
+    padding-left: 24px;
+    padding-top: 180px;
+  }
+
+  .logo {
+    width: auto;
+    height: 300px;
+  }
+
+  .map {
+    width: 500px;
+    height: 500px;
+  }
+}

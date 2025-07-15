@@ -1,0 +1,37 @@
+main {
+  position: relative;
+  z-index: 1;
+  background-image: url("../assets/rules_background.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.rules__container {
+  position: relative;
+  z-index: 2;
+  min-height: 100dvh;
+  height: 250dvh;
+  max-width: 800px;
+
+  text-wrap: balance;
+  margin-top: 100px;
+  margin-left: 64px;
+
+  color: #ffffff;
+}
+
+span {
+  font-weight: 600;
+}
+
+ol {
+  padding-left: 24px;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+p {
+  line-height: 1.2lh;
+}
