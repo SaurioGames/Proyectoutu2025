@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- Navbar principal -->
+      
       <header class="navbar">
         <nav>
           <div>
@@ -30,12 +30,16 @@
       </header>
 
       <section class="signup__container">
-        <div class="signup__header">
-          <h1>Crea tu cuenta</h1>
-          <p>y empezá a jugar!</p>
-        </div>
+        
         <form action="" class="signup__form">
+
+          <div class="signup__header">
+            <h1>Crea tu cuenta</h1>
+            <p>y empezá a jugar!</p>
+          </div>
+
           <input
+            class="ingreso_datos"
             type="text"
             id="username"
             name="username"
@@ -44,16 +48,24 @@
 
           <!-- Campo para correo electrónico -->
           <input
+            class="ingreso_datos"
             type="email"
             id="email"
             name="email"
             placeholder="usuario@gmail.com"
             required
           />
+          <button class="boton_registro" type="submit">Crear cuenta</button>
         </form>
 
-        <button type="submit">Crear cuenta</button>
+       
       </section>
+     
+      <footer>
+        <h6>SaurioGames | <span> Todos los derechos reservados &copy; 2025</span></h6>
+      </footer>
+
     </div>
+    
   </body>
 </html>

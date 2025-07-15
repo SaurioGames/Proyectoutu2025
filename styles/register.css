@@ -1,5 +1,5 @@
 main {
-  background-color: #f8f8f8;
+    background-color: rgb(232, 232, 232);
 }
 
 .signup__container {
@@ -28,8 +28,28 @@ main {
 .signup__form {
     display: grid;
 
-    padding: 24px 12px;
-
+    padding: 150px 90px;
+    border-radius: 25px;
     gap: 12px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
+
+.boton_registro{
+    width: 100px;
+    display: grid; 
+    margin-left: 100px;
+    padding: 10px;
+    border-radius: 5px;
+border: 1px ;
+background-color: #c6c9c6;
+}
+
+
+input{
+    width: 300px;
+    background-color: #b3aeae;
+    border: 1px;    
+    padding: 20px;
+    border-radius: 5px;
+}
+
