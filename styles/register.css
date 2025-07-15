@@ -1,0 +1,35 @@
+main {
+  background-color: #f8f8f8;
+}
+
+.signup__container {
+    display: grid;
+    place-content: center;
+
+    height: 100vh;
+}
+
+.signup__header {
+    text-align: center;
+
+    margin-bottom: 16px;
+}
+
+.signup__header h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.signup__header > p {
+    font-size: 14px;
+    color: #121212;
+}
+
+.signup__form {
+    display: grid;
+
+    padding: 24px 12px;
+
+    gap: 12px;
+    background-color: red;
+}

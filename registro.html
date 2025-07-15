@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="styles/global.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - SaurioGames</title>
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/register.css" />
-    <title>Registro</title>
-</head>
-<body>
-    <h1 class="font-irish">Saurio Games </h1>
-    
-    <div class="container_registro">
-         <label for="username">Nombre de usuario:</label><br>
-            <input type="text" id="username" name="username" placeholder="Nombre de usuario"><br><br>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar principal -->
+      <header class="navbar">
+        <nav>
+          <div>
+            <a href="#" class="text-xl font-irish text-black">SaurioGames</a>
+          </div>
 
-            <!-- Campo para correo electrónico -->
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required><br><br>
+          <div>
+            <ul>
+              <li>
+                <a href="index.html" class="text-md text-black">Inicio</a>
+              </li>
+              <li>
+                <a href="reglas.html" class="text-md text-black">Reglas</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="signup__container">
+        <div class="signup__header">
+          <h1>Crea tu cuenta</h1>
+          <p>y empezá a jugar!</p>
+        </div>
+        <form action="" class="signup__form">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Nombre de usuario"
+          />
+
+          <!-- Campo para correo electrónico -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="usuario@gmail.com"
+            required
+          />
+        </form>
+
+        <button type="submit">Crear cuenta</button>
+      </section>
     </div>
-</body>
+  </body>
 </html>
